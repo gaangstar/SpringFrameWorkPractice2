@@ -5,6 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.example.springframeworkpractice2.ingredients.model.Ingredient;
+
+import java.util.List;
 
 @Getter
 @Entity
@@ -20,5 +23,5 @@ public class DrinkEntity {
     private String manufacturer;
 
     @OneToMany(mappedBy = "drink")
-    private List<IngredientsEntity> list;
+    private List<Ingredient> list;
 }

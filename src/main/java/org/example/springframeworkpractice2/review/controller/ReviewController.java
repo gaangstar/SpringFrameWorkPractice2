@@ -1,6 +1,7 @@
 package org.example.springframeworkpractice2.review.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.example.springframeworkpractice2.book.model.Book;
 import org.example.springframeworkpractice2.review.model.ReviewDto;
 import org.example.springframeworkpractice2.review.service.ReviewService;
 import org.springframework.http.ResponseEntity;

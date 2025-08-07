@@ -1,6 +1,9 @@
 package org.example.springframeworkpractice2.drink.model;
 
 import lombok.Getter;
+import org.example.springframeworkpractice2.ingredients.model.IngredientDto;
+
+import java.util.List;
 
 public class DrinkDto {
     @Getter
@@ -8,7 +11,7 @@ public class DrinkDto {
         private String name;
         private Integer price;
         private String manufacturer;
-        private List<IngredientsDto.Register> list;
+        private List<IngredientDto.IngredientReq> list;
 
         public DrinkEntity toEntity() {
             DrinkEntity entity = DrinkEntity.builder()

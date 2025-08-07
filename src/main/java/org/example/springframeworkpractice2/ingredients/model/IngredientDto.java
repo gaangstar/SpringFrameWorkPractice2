@@ -1,6 +1,7 @@
 package org.example.springframeworkpractice2.ingredients.model;
 
 import lombok.*;
+import org.example.springframeworkpractice2.drink.model.DrinkEntity;
 
 public class IngredientDto {
 
@@ -11,11 +12,11 @@ public class IngredientDto {
         private String name;
         private Integer gram;
 
-        public Ingredient toEntity(Drink drink) {
+        public Ingredient toEntity(DrinkEntity drinkEntity) {
             return Ingredient.builder()
                     .name(name)
                     .gram(gram)
-                    .drink(drink)
+                    .drink(drinkEntity)
                     .build();
         }
     }

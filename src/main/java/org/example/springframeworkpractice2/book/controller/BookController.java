@@ -1,6 +1,7 @@
 package org.example.springframeworkpractice2.book.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.example.springframeworkpractice2.book.model.BookDto;
 import org.example.springframeworkpractice2.book.service.BookService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

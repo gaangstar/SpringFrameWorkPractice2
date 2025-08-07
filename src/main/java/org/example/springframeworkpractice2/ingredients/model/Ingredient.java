@@ -2,8 +2,7 @@ package org.example.springframeworkpractice2.ingredients.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-
-import java.util.List;
+import org.example.springframeworkpractice2.drink.model.DrinkEntity;
 
 
 @Getter
@@ -20,5 +19,5 @@ public class Ingredient {
 
     @ManyToOne()
     @JoinColumn(name = "drink_idx")
-    private Drink drink;
+    private DrinkEntity drink;
 }
