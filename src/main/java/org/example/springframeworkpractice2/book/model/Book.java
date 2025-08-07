@@ -2,6 +2,7 @@ package org.example.springframeworkpractice2.book.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.example.springframeworkpractice2.review.model.Review;
 
 import java.util.List;
 
@@ -18,6 +19,6 @@ public class Book {
     private Integer page;
     private Integer price;
 
-    @OneToMany(mappedBy = "") //book_idx 변수명
-    private List<ReView> reviewList;
+    @OneToMany(mappedBy = "book") //book_idx 변수명
+    private List<Review> reviewList;
 }
