@@ -8,11 +8,11 @@ public class ReviewDto {
     @Getter
     @NoArgsConstructor
     @Setter
-    public static class register{
+    public static class Register {
         private String contents;
         private Integer score;
 
-        public ReviewEntity toEntity(Book book) {
+        public ReviewEntity toEntity() {
             ReviewEntity entity = ReviewEntity.builder()
                     .contents(contents)
                     .score(score)
